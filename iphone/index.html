@@ -23,5 +23,52 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section>
+            <div id="circle"></div>
+
+            <div class="text-main">
+                <img src="imagem/iphone13.png" alt="iphone13" id="iphone13">
+                
+                <h1>Seu novo superpoder</h1>
+                
+                <p>
+                    Chip com velocidade impressionante. Um aumento notável na duração a bateria. E novos recursos e foto e vídeo. <br> No iPhone 13, você faz coisas que nunca pôde. E ele ainda vem em dois tamanhos.
+                </p>
+                
+                <h2>A partir de R$6.599</h2>
+                
+                <a href="#" class="btn_comprar">Comprar</a>
+                
+                <div>
+                    <h3>Escolha sua cor favorita:</h3>
+                </div>
+                
+                <div class="cores">
+                    <span id="verde" onclick="imgSlider('imagem/green.png'); circleChange('var(--verde_circulo)')"></span>
+                    <span id="rosa" onclick="imgSlider('imagem/pink.png'); circleChange('var(--rosa_circulo)')"></span>
+                    <span id="azul" onclick="imgSlider('imagem/blue.png'); circleChange('var(--azul_circulo)')"></span>
+                    <span id="preto" onclick="imgSlider('imagem/black.png'); circleChange('var(--preto_circulo)')"></span>
+                    <span id="branco" onclick="imgSlider('imagem/white.png'); circleChange('var(--branco_circulo)')"></span>
+                    <span id="vermelho" onclick="imgSlider('imagem/red.png'); circleChange('var(--vermelho_circulo)')"></span>
+                </div>
+            </div>
+            <div class="img-main">
+                <img src="imagem/green.png" alt="iphone verde" id="phone">
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+        // função pra mudar o celular
+        function imgSlider(e) {
+            document.querySelector('#phone').src = e
+        }
+
+        //função pra mudar a cor do circulo
+        function circleChange(color) {
+            const circle = document.querySelector('#circle');
+            circle.style.background = color
+}
+    </script>
 </body>
 </html>
