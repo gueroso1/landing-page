@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0,user-scalable=0">
     <title>Iphone</title>
     <link rel="shortcut icon" href="imagem/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="#"><img src="imagem/logo.png" alt="logo iphone" class="logo"></a>
-            
-            <ul>
+<body onresize="mudouTamanho()">
+    <header>       
+        <a href="#"><img src="imagem/logo.png" alt="logo iphone" class="logo"></a>
+        
+        <span id="burguin" class="material-icons" onclick="clickMenu()">menu</span>
+        
+        <nav>   
+            <ul id="itens_menu">
                 <li><a href="#">Mac</a></li>
                 <li><a href="#">iPad</a></li>
                 <li><a href="#" id="iphone">iPhone</a></li>
@@ -34,7 +37,11 @@
                 <h1>Seu novo superpoder</h1>
                 
                 <p>
-                    Chip com velocidade impressionante. Um aumento notável na duração a bateria. E novos recursos e foto e vídeo. <br> No iPhone 13, você faz coisas que nunca pôde. E ele ainda vem em dois tamanhos.
+                    Chip com velocidade impressionante. Um aumento notável na duração a bateria. E novos recursos e foto e vídeo.
+                <p>
+                
+                <p>
+                    No iPhone 13, você faz coisas que nunca pôde. E ele ainda vem em dois tamanhos.
                 </p>
                 
                 <h2>A partir de R$6.599</h2>
@@ -57,6 +64,9 @@
             <div class="img-main">
                 <img src="imagem/green.png" alt="iphone verde" id="phone">
             </div>
+        </section>
+    </main>
+
         </section>
     </main>
     <script src="script.js"></script>
