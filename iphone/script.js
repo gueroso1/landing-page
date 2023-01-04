@@ -11,7 +11,7 @@ function circleChange(color) {
 
 // menu hamburguinho
 function mudouTamanho() {
-    if (window.innerWidth >= 700) {
+    if (window.innerWidth>=769) {
         itens_menu.style.display = 'block'
     } else {
         itens_menu.style.display = 'none'

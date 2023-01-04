@@ -63,11 +63,11 @@ body {
 
 nav {
     flex-basis: 100%;
+    display: none;
 }
 
 nav > ul {
-    margin: 0 15px;
-    display: none;
+    margin: 0 15px; 
 }
 
 nav > ul > li {
@@ -200,14 +200,18 @@ h3 {
 }
 
 @media(min-width:769px) {
-        #burguin {
+    header {
+        flex-wrap: nowrap;
+    }
+
+    #burguin {
         display: none;
     }
 
     nav {
         overflow-y: unset;
         flex-basis: unset;
-        display: flex;
+        display: block;
     }
 
     nav ul li {
