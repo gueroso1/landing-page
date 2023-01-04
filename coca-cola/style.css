@@ -17,7 +17,7 @@
     --dark: #121212;
 }
 
-body {
+body, html {
     background-color: var(--dark);
 }
 
@@ -46,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    border-bottom: 1px solid #fff;
+    color: #e51e2a;
 }
 
 
@@ -57,7 +57,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px;
+    padding: 80px;
     color: var(--white);
     overflow: hidden;
 }
@@ -102,23 +102,62 @@ h1 {
 
 .btn:hover {
     opacity: 0.8;
+    transform: translateY(-10px);
 }
 
 .icones {
-    margin-top: 4rem; 
+    margin-top: 8rem; 
     display: flex;
     align-items: center;
 }
 
-.icones img {
-    width: 50px;
-    height: 50px;
+.icones span {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
     border-radius: 50%;
     background-color: #222;
     margin-left: 45px;
     transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones span:hover {
+    background-color: var(--red);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.icones img {
+    transform: scale(0.6);
+    filter: invert(1);
 }
 
 .img-main {
-    position: relative;
+    position: absolute;
+    right: 0;
+    bottom: -40px;
 }
+
+.img-main img {
+    width: 200px;
+}
+
+.img1 {
+    transform: rotate(-15deg);
+}
+
+.img2 {
+    transform: rotate(5deg);
+}
+
+.img3 {
+    transform: rotate(15deg);
+}
+
+.img4 {
+    transform: rotate(-15deg);
+}
+
