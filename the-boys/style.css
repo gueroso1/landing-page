@@ -128,6 +128,11 @@ section {
     margin-bottom: 2rem;
 }
 
+.botao:hover {
+    background-color: #1497d9;
+    opacity: 0.8;
+}
+
 .main-img {
     white-space: nowrap;
     width: 100%;
@@ -144,16 +149,16 @@ section {
 }
 
 #cp {
-    width: 390px;
+    width: 365px;
     margin-left: 5px;
 }
 
 #luz {
-    width: 465px;
+    width: 437px;
 }
 
 #trem {
-    width: 465px;
+    width: 437px;
 }
 
 #sete {
