@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@media(min-width: 769px){
+    body {
+        all: unset;
+        background: url(img/bg.jpg) no-repeat center/cover fixed;
+    }
+
+    header {
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 20px;
+    }
+
+    #burguin {
+        display: none;
+    }
+
+    nav {
+        flex-basis: unset;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-right: 20px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        border-bottom: none;
+    }
+
+    nav a {
+        padding-bottom: 5px;
+        border-bottom: 2px solid transparent;
+        transition: all .6s;
+    }
+
+    nav a:hover {
+        border-bottom: 2px solid #138ecc;
+    }
+
+    /* main */
+    #bg {
+        display: none;
+    }
+
+    #logo-boys {
+        all: unset;
+        width: 35rem;
+        margin: 3rem 0;
+    }
+
+    section {
+        top: unset;
+        align-items: flex-start;
+        margin-left: 2.5rem;
+    }
+
+    .botoes {
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 20px 45px;
+        margin-bottom: 1rem;     
+    }
+
+    .texto {
+        width: 35rem;
+    }
+    
+    .main-img {
+        display: none;
+    }   
+}
