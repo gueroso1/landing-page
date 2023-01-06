@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coca Cola</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <!-- CABEÇALHO -->
     <header>
         <a href="#"><img src="img/logo.png" alt="coca cola logo" class="logo"></a>
 
+        <span id="burguin" class="material-icons" onclick="clickMenu()">menu</span>
+
         <nav>
-            <ul>
+            <ul id="itens_menu">
                 <li><a href="#">Home</a></li>
                 
                 <li><a href="#">Products</a></li>
@@ -28,14 +31,13 @@
     <!-- PRINCIPAL -->
     <main>
         <section>
-            <div class="text-main">
-                <div class="circulo"></div>
-                
+            <div class="text-main">  
+                <div class="circulo"></div>                          
                 <h2>THAT'S WHAT</h2>
                 
                 <h1>I LIKE</h1>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae praesentium velit ex doloremque perferendis soluta aliquam exercitationem, temporibus, sint voluptate numquam necessitatibus omnis totam facere? Dignissimos cumque modi et odit.</p>
+                <p>Lorem ipsum dolor sit amet consectr adipising elit. Molestiae praesentium velit ex doloremque perferendis soluta aliquam exercita, tempori, sint volupate numquam necessitatibus omnis totam facere? Dignissimos cumque modi et odit.</p>
                 
                 <a href="#" class="btn">VIEW ALL PRODUCTS</a>
                 
@@ -47,7 +49,6 @@
                     <span><img src="img/instagram.png" alt="instagram"></span>
                 </div>
             </div>
-
             <div class="img-main">
                 <img src="img/cocacola1.png" alt="coca cola" class="img1">
 
@@ -57,8 +58,9 @@
 
                 <img src="img/cocacola4.png" alt="coca cola" class="img4">
             </div>
-
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

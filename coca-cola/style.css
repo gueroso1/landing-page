@@ -25,24 +25,49 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 100px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    border-bottom: rgba(255, 255, 255, 0.08) solid 1px;
 }
 
 .logo {
-    width: 150px;
+    width: 150px;   
+}
+
+#burguin {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+
+nav {
+    flex-basis: 100%;
+    
 }
 
 nav > ul {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    padding-right: 20px;
+    margin: 0 15px;
+    display: none;
+}
+
+nav > ul > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+nav > ul > li:nth-last-child(1) {
+    border-bottom: none;
+    padding-top: 5px;
 }
 
 nav a {
     color: var(--white);
+    display: block;
+    text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
+    padding: 17px;
 }
 
 nav a:hover {
@@ -54,39 +79,31 @@ nav a:hover {
 
 section {
     position: relative;
+    flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 80px;
+    justify-content: center;
+    padding: 0 80px;
     color: var(--white);
     overflow: hidden;
 }
 
 .text-main {
-    width: 600px;
-}
-
-.circulo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:  var(--red);
-    clip-path: circle(50% at bottom right);
+    text-align: center;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 4rem;
 }
 
 h1 {
     color: var(--red);
-    font-size: 8rem;
+    font-size: 5.7rem;
 }
 
 .text-main > p {
-    text-align: justify;
+    text-align: center;
     margin-bottom: 4rem;
 }
 
@@ -109,6 +126,9 @@ h1 {
     margin-top: 8rem; 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    gap: 50px;
 }
 
 .icones span {
@@ -117,7 +137,6 @@ h1 {
     padding: 10px;
     border-radius: 50%;
     background-color: #222;
-    margin-left: 45px;
     transition: 0.3s ease-in-out;
     display: flex;
     align-items: center;
@@ -135,14 +154,24 @@ h1 {
     filter: invert(1);
 }
 
-.img-main {
+.circulo {
     position: absolute;
-    right: 0;
-    bottom: -40px;
+    top: 0px;
+    left: -66px;
+    width: 134%;
+    height: 138%;
+    background:  var(--red);
+    clip-path: circle(50% at bottom);
+}
+
+.img-main {
+    position: relative;
+    bottom: -18px;
+    
 }
 
 .img-main img {
-    width: 200px;
+    width: 50px;
 }
 
 .img1 {
@@ -159,4 +188,103 @@ h1 {
 
 .img4 {
     transform: rotate(-15deg);
+}
+
+@media(min-width:769px) {
+    header {
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 20px;
+    }
+
+    #burguin {
+        display: none;
+    }
+
+    nav {
+        flex-basis: unset;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-right: 20px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        border-bottom: none;
+    }
+
+    nav a {
+        padding-bottom: 5px;
+        border-bottom: 2px solid transparent;
+        transition: all .6s;
+    }
+
+    .icones {
+        justify-content: center;
+    }
+
+    .circulo {
+        position: absolute;
+        top: 0px;
+        left: -66px;
+        width: 134%;
+        height: 138%;
+        background:  var(--red);
+        clip-path: circle(50% at bottom);
+    }
+    
+    .img-main img {
+        width: 100px;
+    }
+}
+
+@media(min-width:940px){
+    .circulo {
+        display: none;
+    }
+}
+
+@media(min-width:1200px) {
+    section {
+        all: unset;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 75px;
+        color: var(--white);
+        overflow: hidden;
+    }
+
+    .circulo {
+        all: unset;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:  var(--red);
+        clip-path: circle(50% at bottom right);
+    }
+
+    .text-main > p {
+        width: 600px
+    }
+
+    .img-main {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+    }
+    
+    .img-main img {
+        width: 200px;
+    }
 }
