@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-ney {
+    background: rgba(3, 0, 12, .7) url(img/bg.png) no-repeat center/cover;
+    background-blend-mode: darken;
+    max-width: 100%;
+    height: 70vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;   
+    padding-top: 2rem;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+#burguin {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 2rem;
+}
+
+.logo {
+    width: 60px;
+}
+
+nav {
+    flex-basis: 100%;
+    
+}
+
+nav > ul {
+    margin: 0 15px;
+    display: none;
+}
+
+nav > ul > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+nav > ul > li:nth-last-child(1) {
+    border-bottom: none;
+    padding-top: 5px;
+}
+
+nav a {
+    color: #F9F9F9;
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 17px;
+}
+
+.btn-cabecalho {
+    background-color: #DA2535;
+    border-radius: 4px;
+    width: 170px;
+    display: block;
+    margin: 0 auto;   
+}
+
+.conteudo-cabecalho {
+    color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.conteudo-cabecalho h1  {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 94px;
+    margin-bottom: 1rem;
+}
+
+.conteudo-cabecalho p {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 160%;
+}
+
+.btn {
+    background-color: #DA2535;
+    color: #F9F9F9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 3rem;
+    width: 150px;
+    text-align: center;
+}
+
+.placar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: nowrap;
+    margin: 3rem 0;
+}
+
+.placar img {
+    width: 70px;
+}
+
+.placar .psg-logo {
+    width: 89px;
+    height: 89px;
+}
+
+.cu {
+    padding-left: 7px;
+}
+
+.bg-estadio {
+    
+}
