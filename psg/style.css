@@ -43,7 +43,7 @@ header {
 
 nav {
     flex-basis: 100%;
-    
+      
 }
 
 nav > ul {
@@ -254,17 +254,19 @@ h4 {
 footer {
     background-color:  #0B1421;
     color: #F9F9F9;
-    padding: 40px 24px;
 }
 
 .rodape {
-    margin-bottom: 40px;
+    padding: 20px 24px;
+}
+
+#rodape-primeiro {
+    padding-top: 20px;
 }
 
 .rodape h1 {
     font-weight: 600;
     font-size: 18px;
-    line-height: 22px;
     margin-bottom: 20px;
 }
 
@@ -273,6 +275,10 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 39px;
+}
+
+.rodape-ult {
+    padding: 40px 24px;
 }
 
 .rodape-ult a {

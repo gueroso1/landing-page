@@ -1,6 +1,6 @@
 // menu hamburguinho
 function mudouTamanho() {
-    if (window.innerWidth>=769) {
+    if (window.innerWidth>=1200) {
         itens_menu.style.display = 'block'
     } else {
         itens_menu.style.display = 'none'
