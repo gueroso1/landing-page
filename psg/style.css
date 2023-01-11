@@ -281,6 +281,12 @@ footer {
     padding: 40px 24px;
 }
 
+.rodape-ult h1 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 .rodape-ult a {
     color: #F9F9F9;
     font-weight: 400;
